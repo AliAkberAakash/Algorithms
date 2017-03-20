@@ -35,14 +35,18 @@ int main()
 
     int a;
 
-    printf("Enter a number:\n");
+//    printf("Enter a number:\n");
+//
+//    scanf("%d", &a);
+//
+//    if(prime[a])
+//        printf("Not a prime!\n");
+//    else
+//        printf("Prime!\n");
 
-    scanf("%d", &a);
+    for(int i=0; i<SIZE; i++)
+        if(!prime[i])
+            printf("%d\n", i);
 
-    if(prime[a])
-        printf("Not a prime!\n");
-    else
-        printf("Prime!\n");
-
-    main();
+    //main();
 }

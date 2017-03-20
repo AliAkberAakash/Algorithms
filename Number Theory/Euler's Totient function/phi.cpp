@@ -1,6 +1,6 @@
 /*
 * A simple program to find the prime and also the phi of n numbers.
-* This program is helpful, in case we need the phi of a lot of numbers.
+* This program is helpful in case, we need the phi of a lot of numbers.
 * Phi is the representation of Euler's Totient function.
 * For a number n, The number of all the numbers from 0 to n that are co-primes of n (greater than 1) is phi.
 * i.e Phi(12)=4, the numbers are 1,2,3,4,5,6,7,8,9,10,11,12, the co-primes of 12 (greater than 1) are 2,3,5, and 7. So the value of phi is 4
@@ -10,6 +10,7 @@
 */
 
 #include<cstdio>
+#include<cmath>
 #include<iostream>
 
 int phi[1000006], prime[1000006]; //declaring the arrays of prime and phi
@@ -40,7 +41,7 @@ void sievephi(int n) //we'll find phi and primes till n
 
 int main()
 {
-    int i,n=10;
+    int i,n=12;
     sievephi(n);
 
     for(i=1; i<=n; i++)
