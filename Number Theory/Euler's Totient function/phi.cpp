@@ -41,7 +41,7 @@ void sievephi(int n) //we'll find phi and primes till n
 
 int main()
 {
-    int i,n=12;
+    int i,n=20;
     sievephi(n);
 
     for(i=1; i<=n; i++)

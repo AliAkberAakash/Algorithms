@@ -18,7 +18,7 @@ void sieve()
 
     int limit=sqrt(SIZE+1);
 
-    for(i=2; i<=limit; i++)
+    for(i=3; i<=limit; i=i+2)
     {
         if(!prime[i])
         {
